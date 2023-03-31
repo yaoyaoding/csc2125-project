@@ -235,7 +235,7 @@ class Network:
         )
 
 
-def main(arg_string: Optional[str]):
+def main(arg_string: Optional[str] = None):
     if arg_string:
         args = parser.parse_args(arg_string.split())
     else:
@@ -254,5 +254,4 @@ def main(arg_string: Optional[str]):
 
 
 if __name__ == '__main__':
-    # main('-s 1')
-    main('-s 1 -d polar:2:0.9')
+    main()
